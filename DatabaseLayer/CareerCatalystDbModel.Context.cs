@@ -29,15 +29,15 @@ namespace DatabaseLayer
         public virtual DbSet<CertificateTable> CertificateTables { get; set; }
         public virtual DbSet<CompanyTable> CompanyTables { get; set; }
         public virtual DbSet<CountryTable> CountryTables { get; set; }
-        public virtual DbSet<CurrentJobStatusTable> CurrentJobStatusTables { get; set; }
         public virtual DbSet<EducationTable> EducationTables { get; set; }
         public virtual DbSet<EmployeeTable> EmployeeTables { get; set; }
-        public virtual DbSet<EventTable> EventTables { get; set; }
         public virtual DbSet<JobApplyStatusTable> JobApplyStatusTables { get; set; }
         public virtual DbSet<JobApplyTable> JobApplyTables { get; set; }
         public virtual DbSet<JobCategoryTable> JobCategoryTables { get; set; }
+        public virtual DbSet<JobNatureTable> JobNatureTables { get; set; }
+        public virtual DbSet<JobRequirementDetailTable> JobRequirementDetailTables { get; set; }
+        public virtual DbSet<JobRequirementTable> JobRequirementTables { get; set; }
         public virtual DbSet<JobStatusTable> JobStatusTables { get; set; }
-        public virtual DbSet<JobTable> JobTables { get; set; }
         public virtual DbSet<LanguageTable> LanguageTables { get; set; }
         public virtual DbSet<PostJobTable> PostJobTables { get; set; }
         public virtual DbSet<SkillTable> SkillTables { get; set; }

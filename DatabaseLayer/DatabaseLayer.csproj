@@ -77,16 +77,10 @@
     <Compile Include="CountryTable.cs">
       <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="CurrentJobStatusTable.cs">
-      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="EducationTable.cs">
       <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EmployeeTable.cs">
-      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EventTable.cs">
       <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="JobApplyStatusTable.cs">
@@ -98,10 +92,16 @@
     <Compile Include="JobCategoryTable.cs">
       <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="JobStatusTable.cs">
+    <Compile Include="JobNatureTable.cs">
       <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="JobTable.cs">
+    <Compile Include="JobRequirementDetailTable.cs">
+      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobRequirementTable.cs">
+      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobStatusTable.cs">
       <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="LanguageTable.cs">
@@ -125,32 +125,30 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="CareerCatalystDbModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>CareerCatalystDbModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
     <None Include="CareerCatalystDbModel.edmx.diagram">
       <DependentUpon>CareerCatalystDbModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="CareerCatalystDbModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CareerCatalystDbModel.Context.cs</LastGenOutput>
       <DependentUpon>CareerCatalystDbModel.edmx</DependentUpon>
+      <LastGenOutput>CareerCatalystDbModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="CareerCatalystDbModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CareerCatalystDbModel.edmx</DependentUpon>
       <LastGenOutput>CareerCatalystDbModel.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

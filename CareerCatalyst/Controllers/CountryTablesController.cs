@@ -38,7 +38,7 @@ namespace CareerCatalyst.Controllers
         // GET: CountryTables/Create
         public ActionResult Create()
         {
-            return View();
+            return View(new CountryTable());
         }
 
         // POST: CountryTables/Create

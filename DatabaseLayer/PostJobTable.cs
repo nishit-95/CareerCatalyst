@@ -23,24 +23,26 @@ namespace DatabaseLayer
         public int PostJobID { get; set; }
         public int UserID { get; set; }
         public int CompanyID { get; set; }
-        public int JobID { get; set; }
-        public int RequiredPerson { get; set; }
-        public string Qualification { get; set; }
-        public string MinimumExperience { get; set; }
-        public int AgeLimit { get; set; }
-        public string MarriedStatus { get; set; }
-        public System.DateTime StartDate { get; set; }
-        public System.DateTime EndDate { get; set; }
-        public System.DateTime ShortlistDate { get; set; }
-        public System.DateTime InterviewDate { get; set; }
-        public int JobStatusID { get; set; }
-        public string Description { get; set; }
         public int JobCategoryID { get; set; }
+        public string JobTitle { get; set; }
+        public string JobDescription { get; set; }
+        public int MinSalary { get; set; }
+        public int MaxSalary { get; set; }
+        public string Location { get; set; }
+        public int Vacancy { get; set; }
+        public int JobNatureID { get; set; }
+        public System.DateTime PostDate { get; set; }
+        public System.DateTime ApplicationLastDate { get; set; }
+        public System.DateTime LastDate { get; set; }
+        public int JobRequirementID { get; set; }
+        public int JobStatusID { get; set; }
     
         public virtual CompanyTable CompanyTable { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<JobApplyTable> JobApplyTables { get; set; }
         public virtual JobCategoryTable JobCategoryTable { get; set; }
+        public virtual JobNatureTable JobNatureTable { get; set; }
+        public virtual JobRequirementTable JobRequirementTable { get; set; }
         public virtual JobStatusTable JobStatusTable { get; set; }
         public virtual UserTable UserTable { get; set; }
     }

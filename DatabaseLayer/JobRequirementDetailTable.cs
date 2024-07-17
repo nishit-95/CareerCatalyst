@@ -12,14 +12,12 @@ namespace DatabaseLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class JobTable
+    public partial class JobRequirementDetailTable
     {
-        public int JobID { get; set; }
-        public int JobCategotyID { get; set; }
-        public string JobTitle { get; set; }
-        public string JobRequirments { get; set; }
-        public string JobDetails { get; set; }
+        public int JobRequirementDetailID { get; set; }
+        public int JobRequirementID { get; set; }
+        public string JobRequirementDetails { get; set; }
     
-        public virtual JobCategoryTable JobCategoryTable { get; set; }
+        public virtual JobRequirementTable JobRequirementTable { get; set; }
     }
 }

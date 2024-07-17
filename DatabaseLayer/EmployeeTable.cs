@@ -41,12 +41,10 @@ namespace DatabaseLayer
         public string PermanentAddress { get; set; }
         public string JobReference { get; set; }
         public string Description { get; set; }
-        public int CurrentJobStatusID { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CertificateTable> CertificateTables { get; set; }
         public virtual CountryTable CountryTable { get; set; }
-        public virtual CurrentJobStatusTable CurrentJobStatusTable { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EducationTable> EducationTables { get; set; }
         public virtual JobCategoryTable JobCategoryTable { get; set; }
