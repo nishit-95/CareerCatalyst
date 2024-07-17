@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8533c3f877bf46468683e2fa7c8e898f" Name="Diagram1">
+        <EntityTypeShape EntityType="CareerCatalystDBModel.AccountTableStatu" Width="1.5" PointX="1.5" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.CertificateTable" Width="1.5" PointX="8.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.CompanyTable" Width="1.5" PointX="6.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.CountryTable" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.CurrentJobStatusTable" Width="1.5" PointX="3.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.EducationTable" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.EmployeeTable" Width="1.5" PointX="6" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.EventTable" Width="1.5" PointX="9" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.JobApplyStatusTable" Width="1.5" PointX="9" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.JobApplyTable" Width="1.5" PointX="11.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.JobCategoryTable" Width="1.5" PointX="3.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.JobStatusTable" Width="1.5" PointX="6.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.JobTable" Width="1.5" PointX="6" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.LanguageTable" Width="1.5" PointX="8.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.PostJobTable" Width="1.5" PointX="9" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.SkillTable" Width="1.5" PointX="8.25" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.UserTable" Width="1.5" PointX="3.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.UserTypeTable" Width="1.5" PointX="1.5" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CareerCatalystDBModel.WorkExperienceTable" Width="1.5" PointX="11.25" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_UserTable_AccountTableStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_CertificateTable_EmployeeTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_CompanyTable_UserTable1" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_EventTable_CompanyTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_PostJobTable_CompanyTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_EducationTable_CountryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_EmployeeTable_CountryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_WorkExperienceTable_CountryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_EmployeeTable_CurrentJobStatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_EducationTable_EmployeeTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_EmployeeTable_JobCategoryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_EmployeeTable_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_JobApplyTable_EmployeeTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_LanguageTable_EmployeeTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_SkillTable_EmployeeTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_WorkExperienceTable_EmployeeTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_JobApplyTable_JobApplyStatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_JobApplyTable_PostJobStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_JobTable_JobCategoryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_PostJobTable_JobCategoryTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_PostJobTable_JobStatusTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_PostJobTable_UserTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CareerCatalystDBModel.FK_UserTable_UserTypeTable" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
