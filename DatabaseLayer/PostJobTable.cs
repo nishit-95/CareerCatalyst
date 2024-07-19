@@ -14,12 +14,6 @@ namespace DatabaseLayer
     
     public partial class PostJobTable
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PostJobTable()
-        {
-            this.JobApplyTables = new HashSet<JobApplyTable>();
-        }
-    
         public int PostJobID { get; set; }
         public int UserID { get; set; }
         public int CompanyID { get; set; }
@@ -36,10 +30,9 @@ namespace DatabaseLayer
         public System.DateTime LastDate { get; set; }
         public int JobRequirementID { get; set; }
         public int JobStatusID { get; set; }
+        public string WebUrl { get; set; }
     
         public virtual CompanyTable CompanyTable { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<JobApplyTable> JobApplyTables { get; set; }
         public virtual JobCategoryTable JobCategoryTable { get; set; }
         public virtual JobNatureTable JobNatureTable { get; set; }
         public virtual JobRequirementTable JobRequirementTable { get; set; }

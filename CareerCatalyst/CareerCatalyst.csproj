@@ -272,11 +272,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CountryTablesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JobCategoryTablesController.cs" />
+    <Compile Include="Controllers\JobNatureTablesController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CompanyMV.cs" />
+    <Compile Include="Models\UserMV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -347,11 +351,6 @@
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\CountryTables\Create.cshtml" />
-    <Content Include="Views\CountryTables\Delete.cshtml" />
-    <Content Include="Views\CountryTables\Details.cshtml" />
-    <Content Include="Views\CountryTables\Edit.cshtml" />
-    <Content Include="Views\CountryTables\Index.cshtml" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.esm.min.js.map" />
@@ -359,6 +358,13 @@
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\JobCategoryTables\Create.cshtml" />
+    <Content Include="Views\JobCategoryTables\Edit.cshtml" />
+    <Content Include="Views\JobCategoryTables\Index.cshtml" />
+    <Content Include="Views\JobNatureTables\Create.cshtml" />
+    <Content Include="Views\JobNatureTables\Edit.cshtml" />
+    <Content Include="Views\JobNatureTables\Index.cshtml" />
+    <Content Include="Views\User\NewUser.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -368,7 +374,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DatabaseLayer\DatabaseLayer.csproj">

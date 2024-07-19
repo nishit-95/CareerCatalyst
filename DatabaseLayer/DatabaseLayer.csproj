@@ -50,9 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountTableStatu.cs">
-      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="CareerCatalystDbModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -68,25 +65,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CareerCatalystDbModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="CertificateTable.cs">
-      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="CompanyTable.cs">
-      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CountryTable.cs">
-      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EducationTable.cs">
-      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeTable.cs">
-      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="JobApplyStatusTable.cs">
-      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="JobApplyTable.cs">
       <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="JobCategoryTable.cs">
@@ -104,23 +83,14 @@
     <Compile Include="JobStatusTable.cs">
       <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="LanguageTable.cs">
-      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="PostJobTable.cs">
       <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SkillTable.cs">
-      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="UserTable.cs">
       <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="UserTypeTable.cs">
-      <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="WorkExperienceTable.cs">
       <DependentUpon>CareerCatalystDbModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
