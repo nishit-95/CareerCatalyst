@@ -224,6 +224,7 @@
     <Content Include="Content\assets\js\animated.headline.js" />
     <Content Include="Content\assets\js\bootstrap.min.js" />
     <Content Include="Content\assets\js\contact.js" />
+    <Content Include="Content\assets\js\jquery-3.3.1.min.js" />
     <Content Include="Content\assets\js\jquery.ajaxchimp.min.js" />
     <Content Include="Content\assets\js\jquery.form.js" />
     <Content Include="Content\assets\js\jquery.magnific-popup.js" />

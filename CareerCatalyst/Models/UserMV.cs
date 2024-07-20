@@ -18,7 +18,7 @@ namespace CareerCatalyst.Models
         public string password { get; set; }
         public string EmailAddress { get; set; }
         public string ContactNo { get; set; }
-
+        public bool AreYouProvider {  get; set; }
         public CompanyMV Company { get; set; }
 
     }
