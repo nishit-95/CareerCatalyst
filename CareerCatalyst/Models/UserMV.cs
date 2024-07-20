@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -14,10 +15,23 @@ namespace CareerCatalyst.Models
         }
         public int UserID { get; set; }
         public int UserTypeID { get; set; }
+
+        [Required(ErrorMessage ="Required*")]
         public string UserName { get; set; }
+
+
+        [Required(ErrorMessage = "Required*")]
         public string password { get; set; }
+
+
+        [Required(ErrorMessage = "Required*")]
         public string EmailAddress { get; set; }
+
+
+        [Required(ErrorMessage = "Required*")]
         public string ContactNo { get; set; }
+
+
         public bool AreYouProvider {  get; set; }
         public CompanyMV Company { get; set; }
 
