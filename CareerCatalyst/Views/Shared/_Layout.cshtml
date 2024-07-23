@@ -24,6 +24,13 @@
 </head>
 
 <body>
+    @{
+        int usertypeid = 0;
+        if (!string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+        {
+            int.TryParse(Convert.ToString(Session["UserTypeID"]), out usertypeid);
+        }
+    }
     <!-- Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -72,8 +79,15 @@
                                 </div>
                                 <!-- Header-btn -->
                                 <div class="header-btn d-none f-right d-lg-block">
-                                    <a href="@Url.Content("~/User/NewUser")" class="btn head-btn1">Register</a>
-                                    <a href="#" class="btn head-btn2">Login</a>
+                                    @if (usertypeid == 0)
+                                    {
+                                        <a href="@Url.Content("~/User/NewUser")" class="btn head-btn1">Register</a>
+                                        <a href="@Url.Content("~/User/Login")" class="btn head-btn2">Login</a>
+                                    }
+                                    else
+                                    {
+                                        <a href="@Url.Content("~/User/Logout")" class="btn head-btn1">Logout</a>
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -92,12 +106,12 @@
         <main>
 
             @RenderBody()
-            </main class='container'>
-                <hr />
-                <footer>
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-                </footer>
-</div>
+        </main>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
 
     <footer>
         <!-- Footer Start-->

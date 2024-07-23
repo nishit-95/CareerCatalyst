@@ -281,6 +281,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CompanyMV.cs" />
+    <Compile Include="Models\UserLoginMV.cs" />
     <Compile Include="Models\UserMV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -366,6 +367,7 @@
     <Content Include="Views\JobNatureTables\Edit.cshtml" />
     <Content Include="Views\JobNatureTables\Index.cshtml" />
     <Content Include="Views\User\NewUser.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
