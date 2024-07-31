@@ -17,12 +17,20 @@ namespace CareerCatalyst.Controllers
         // GET: JobCategoryTables
         public ActionResult Index()
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+                return RedirectToAction("Login", "User");
+            }
             return View(db.JobCategoryTables.ToList());
         }
 
         // GET: JobCategoryTables/Details/5
         public ActionResult Details(int? id)
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+                return RedirectToAction("Login", "User");
+            }
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -38,6 +46,10 @@ namespace CareerCatalyst.Controllers
         // GET: JobCategoryTables/Create
         public ActionResult Create()
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+                return RedirectToAction("Login", "User");
+            }
             return View(new JobCategoryTable());
         }
 
@@ -48,6 +60,10 @@ namespace CareerCatalyst.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(JobCategoryTable jobCategoryTable)
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+                return RedirectToAction("Login", "User");
+            }
             if (ModelState.IsValid)
             {
                 db.JobCategoryTables.Add(jobCategoryTable);
@@ -61,6 +77,10 @@ namespace CareerCatalyst.Controllers
         // GET: JobCategoryTables/Edit/5
         public ActionResult Edit(int? id)
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+                return RedirectToAction("Login", "User");
+            }
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -80,6 +100,10 @@ namespace CareerCatalyst.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(JobCategoryTable jobCategoryTable)
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+                return RedirectToAction("Login", "User");
+            }
             if (ModelState.IsValid)
             {
                 db.Entry(jobCategoryTable).State = EntityState.Modified;

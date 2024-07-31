@@ -137,5 +137,15 @@ namespace CareerCatalyst.Controllers
             Session["UserTypeID"] = string.Empty;
             return RedirectToAction("Index","Home");
         }
+
+        public ActionResult AllUsers()
+        {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+                return RedirectToAction("Login", "User");
+            }
+            var users = Db.UserTables.ToList();
+            return View(users);
+        }
     }
 }
